@@ -1,0 +1,21 @@
+# Some jupyter notebook files
+Airline_price_prediction-Copy1 copy.ipynb
+Airline_price_prediction-Copy1.ipynb
+Demo.ipynb
+
+# Folders
+.ipynb_checkpoints/
+images
+AirlinePricePredictorApp
+
+# Some python files
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Ignore virtual environment folders
+env/
+venv/
+ENV/
+.venv/

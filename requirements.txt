@@ -1,0 +1,12 @@
+# List of all libraries to be installed to run the project
+numpy
+pandas
+matplotlib
+seaborn
+scikit-learn
+lightgbm
+xgboost
+streamlit
+pickle
+joblib
+flask

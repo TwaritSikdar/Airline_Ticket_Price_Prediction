@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Importing Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Assistant:wght@200..800&family=Dosis:wght@200..800&family=Space+Grotesk:wght@300..700&display=swap" rel="stylesheet">
+
+    <!-- Importing the Stylesheet -->
+    <link rel="stylesheet" href="static/index_style2.css">
+
+    <title>Airline Ticket Price Predictor App</title>
+</head>
+<body>
+    <h1>Welcome to Ticket Price Predictor for Airlines</h1>
+    <h2>Please enter the details of your flight:</h2>
+    <form action="/" method="POST">
+
+        <label for="airline">Name of Airline:</label>
+        <select name="Airline" id="airline">
+            <option value="Jet Airways">JET AIRWAYS</option>
+            <option value="Indigo">INDIGO</option>
+            <option value="Air India">AIR INDIA</option>
+            <option value="Multiple carriers">MULTIPLE CARRIERS</option>
+            <option value="Spicejet">SPICEJET</option>
+            <option value="Vistara">VISTARA</option>
+            <option value="Air Asia">AIR ASIA</option>
+            <option value="GoAir">GO AIR</option>
+            <option value="Multiple carriers Premium economy">MULTIPLE CARRIERS PREMIUM ECONOMY</option>
+            <option value="Jet Airways Business">JET AIRWAYS BUSINESS</option>
+            <option value="Vistara Premium economy">VISTARA PREMIUM ECONOMY</option>
+            <option value="Trujet">TRUJET</option>
+        </select><br>
+
+        <label for="source">Source:</label>
+        <select name="Source" id="source">
+            <option value="Delhi">DELHI</option>
+            <option value="Kolkata">KOLKATA</option>
+            <option value="Bangalore">BANGALORE</option>
+            <option value="Mumbai">MUMBAI</option>
+            <option value="Chennai">CHENNAI</option>
+        </select><br>
+
+        <label for="destination">Destination:</label>
+        <select name="Destination" id="destination">
+            <option value="Cochin">COCHIN</option>
+            <option value="Bangalore">BANGALORE</option>
+            <option value="Delhi">DELHI</option>
+            <option value="New Delhi">NEW DELHI</option>
+            <option value="Hyderabad">HYDERABAD</option>
+            <option value="Kolkata">KOLKATA</option>
+        </select><br>
+
+        <label for="total_stops">Total Stops:</label>
+        <select name="Total_Stops" id="total_stops">
+            <option value="non-stop">Non-Stop</option>
+            <option value="1 Stop">1 Stop</option>
+            <option value="2 Stops">2 Stops</option>
+            <option value="3 Stops">3 Stops</option>
+            <option value="4 Stops">4 Stops</option>
+        </select><br>
+
+        <label for="journey_date">Date of Journey:</label>
+        <input type="date" name="Journey_date" id="journey_date" placeholder="Date of Journey"><br>
+
+        <label for="departure_time">Time of Departure:</label>
+        <input type="time" name="Departure_time" id="departure_time" placeholder="Time of Departure"><br>
+
+        <label for="Arrival_time">Time of Arrival:</label>
+        <input type="time" name="Arrival_time" id="arrival_time" placeholder="Time of Arrival"><br>
+
+        <input type="submit" value="PREDICT PRICE"> 
+        <input type="reset" value="Reset">
+    </form>
+
+    {% if prediction %}
+        <h3>{{ prediction }}</h3>
+    {% endif %}
+
+</body>
+</html>

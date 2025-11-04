@@ -1,0 +1,6 @@
+# Libraries to run the app
+numpy
+pickle
+scikit-learn
+xgboost
+streamlit
