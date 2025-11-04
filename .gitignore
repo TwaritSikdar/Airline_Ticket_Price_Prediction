@@ -19,3 +19,6 @@ env/
 venv/
 ENV/
 .venv/
+
+# Other files
+Gemini Read me Prompt.txt
