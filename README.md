@@ -60,14 +60,14 @@ pip install -r requirements.txt
 ├── Airline_price_prediction-CV.ipynb
 ├── Airline_price_prediction-Raw.ipynb
 ├── Airline_price_prediction.ipynb
-├── airline datset.xlsx
+├── airline_dataset.xlsx
 ├── AirlinePricePredictorApp_F/
 │    ├── models/
 │    │    └── flight_price_preditor_cv.pkl  
 │    ├── static/
 │    │    └── index_style.css
 │    ├── templates/
-│    │   └── index.html
+│    │    └── index.html
 │    ├── app.py
 │    └── requirements.txt
 └── AirlinePricePredictorApp_S/
@@ -101,6 +101,6 @@ The project provides two separate deployment options, accessible via dedicated f
   ```
   * How to Run (If you are directly running the app):
   ```
-  streamlit run streamlit_app.py
+  python app.py
   ```
   * *This will start a local API server, allowing predictions to be accessed via HTTP requests.*
