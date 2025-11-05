@@ -58,6 +58,8 @@ pip install -r requirements.txt
 ## 🗂️ Project Structure
 ```
 ├── Airline_price_prediction-CV.ipynb
+├── Airline_price_prediction-Raw.ipynb
+├── Airline_price_prediction.ipynb
 ├── airline datset.xlsx
 ├── AirlinePricePredictorApp_F/
 │    ├── models/
@@ -73,6 +75,7 @@ pip install -r requirements.txt
 │    │    └── flight_price_preditor_cv.pkl
 │    ├── streamlit_app.py 
 │    └── requirements.txt
+├── README.md
 └── requirements.txt
 ```
 ## 🚀 Usage and Deployment

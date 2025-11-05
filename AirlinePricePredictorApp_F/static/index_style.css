@@ -1,17 +1,132 @@
+/* Basic styling for the entire page to center content and use a clean font */
+body {
+    font-family: 'Assistant', sans-serif;
+    background: linear-gradient(135deg, #f0f4f8, #d9e2ec);
+    color: #333;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    margin: 0;
+    padding: 20px;
+}
+
+/* Styles for the main headings to create a modern look */
 h1 {
-    font-family: 'Archivo Black';
+    font-family: 'Archivo Black', sans-serif;
+    color: #004d99;
+    font-size: 2.5em;
     text-align: center;
+    margin-bottom: 10px;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.1);
 }
 
 h2 {
-    font-family: 'Dosis';
-    font-weight: 500;
+    font-family: 'Space Grotesk', sans-serif;
+    color: #555;
+    text-align: center;
+    font-size: 1.5em;
+    margin-bottom: 25px;
 }
 
-h3 {
-    font-family: 'Dosis';
-}
-
+/* Styles for the main container that holds the form */
 form {
-    font-family: 'Space Grotesk';
+    background-color: #fff;
+    padding: 30px 40px;
+    border-radius: 12px;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 600px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+/* Styles for each form element and label */
+label {
+    font-size: 1em;
+    font-weight: bold;
+    color: #444;
+}
+
+select,
+input[type="date"],
+input[type="time"] {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 1em;
+    box-sizing: border-box;
+    transition: all 0.3s ease;
+}
+
+select:focus,
+input[type="date"]:focus,
+input[type="time"]:focus {
+    outline: none;
+    border-color: #007bff;
+    box-shadow: 0 0 8px rgba(0, 123, 255, 0.2);
+}
+
+/* Styles for the buttons */
+input[type="submit"],
+input[type="reset"] {
+    font-family: 'Dosis', sans-serif;
+    font-weight: 600;
+    font-size: 1.1em;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    text-transform: uppercase;
+}
+
+input[type="submit"] {
+    background-color: #007bff;
+    color: white;
+}
+
+input[type="submit"]:hover {
+    background-color: #0056b3;
+}
+
+input[type="reset"] {
+    background-color: #f44336;
+    color: white;
+}
+
+input[type="reset"]:hover {
+    background-color: #d32f2f;
+}
+
+/* Styles for the prediction text */
+h3 {
+    font-family: 'Dosis', sans-serif;
+    font-size: 1.8em;
+    color: #28a745;
+    text-align: center;
+    margin-top: 25px;
+    padding: 15px;
+    background-color: #e2f9e7;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+/* Responsive design for smaller screens */
+@media (max-width: 650px) {
+    form {
+        padding: 20px;
+    }
+
+    h1 {
+        font-size: 1.8em;
+    }
+
+    h2 {
+        font-size: 1.2em;
+    }
 }
